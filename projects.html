@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - LoopLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="icon" href="logo.png" type="image/png" sizes="32x32">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-infinity me-2"></i>LoopLab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contributors.html">Contributors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="display-4 fw-bold">Our Projects</h1>
+                <p class="lead">Explore the amazing projects built by our community members.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this before the projects section -->
+    <section class="section-padding bg-light-custom">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All Projects</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="web">Web Development</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="mobile">Mobile Apps</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="ai">AI/ML</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" id="projects-container">
+                <!-- Projects will be filtered here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-shopping-cart fa-3x text-indigo"></i>
+                            </div>
+                            <h4 class="card-title">E-Commerce Platform</h4>
+                            <p>A full-stack e-commerce solution built with React and Node.js featuring user authentication, payment processing, and admin dashboard.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">React</span>
+                                <span class="badge bg-light text-dark me-1">Node.js</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-tasks fa-3x text-indigo"></i>
+                            </div>
+                            <h4 class="card-title">Task Management App</h4>
+                            <p>A collaborative task management application with real-time updates, team workspaces, and progress tracking features.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">Vue.js</span>
+                                <span class="badge bg-light text-dark me-1">Express</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-3">
+                                <i class="fas fa-chart-line fa-3x text-indigo"></i>
+                            </div>
+                            <h4 class="card-title">Data Analytics Dashboard</h4>
+                            <p>An interactive dashboard for data visualization and business intelligence with customizable reports and real-time data.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="badge bg-light text-dark me-1">Angular</span>
+                                <span class="badge bg-light text-dark me-1">Python</span>
+                                <span class="badge bg-light text-dark">MySQL</span>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-custom section-padding">
+        <div class="container">
+            <h2 class="section-title">Community Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Weather App</h5>
+                            <p class="text-muted">A beautiful weather application with location-based forecasts.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-indigo me-1">JavaScript</span>
+                                <span class="badge bg-indigo">API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Recipe Finder</h5>
+                            <p class="text-muted">Find recipes based on ingredients you have at home.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-indigo me-1">React</span>
+                                <span class="badge bg-indigo">Spoonacular API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Budget Tracker</h5>
+                            <p class="text-muted">Track your expenses and manage your budget effectively.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-indigo me-1">Vue.js</span>
+                                <span class="badge bg-indigo">Local Storage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Fitness Tracker</h5>
+                            <p class="text-muted">Monitor your workouts and fitness progress over time.</p>
+                            <div class="tech-stack">
+                                <span class="badge bg-indigo me-1">React Native</span>
+                                <span class="badge bg-indigo">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5><i class="fas fa-infinity me-2"></i>LoopLab</h5>
+                    <p>Building the future of tech, one developer at a time.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2025 LoopLab Community. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
